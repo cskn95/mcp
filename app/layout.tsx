@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "TÜİK Veri Asistanı - WhatsApp'tan TÜİK Verilerine Anında Erişim",
   description: "TÜİK MCP Server ve ChatGPT ile güçlendirilmiş WhatsApp botu. Enflasyon, işsizlik, konut fiyatları ve tüm TÜİK istatistiklerine anında ulaşın, AI destekli analizler alın.",
   keywords: "TÜİK, enflasyon, istatistik, WhatsApp bot, veri analizi, Türkiye istatistik, TÜFE, işsizlik oranı, konut fiyatları, ekonomik veriler",
-  authors: [{ name: "TÜİK Veri Asistanı Ekibi" }],
+  authors: [{ name: "Oktant" }],
   openGraph: {
     title: "TÜİK Veri Asistanı - WhatsApp'tan TÜİK Verilerine Anında Erişim",
     description: "TÜİK MCP Server ve ChatGPT ile güçlendirilmiş WhatsApp botu. Tüm TÜİK istatistiklerine anında ulaşın.",
