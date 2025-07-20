@@ -69,7 +69,7 @@ const LandingPage = () => {
               <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                 <BarChart3 className="w-6 h-6 text-white" />
               </div>
-              <span className="font-bold text-xl text-gray-800">Gelecek Planlayıcım</span>
+              <span className="font-bold text-xl text-gray-800">cepassist</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -135,7 +135,7 @@ const LandingPage = () => {
                       <BarChart3 className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">Gelecek Planlayıcım</h3>
+                      <h3 className="text-white font-semibold">cepassist</h3>
                       <p className="text-green-400 text-sm">Çevrimiçi</p>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ const LandingPage = () => {
       <section id="features" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Neden Gelecek Planlayıcım?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Neden cepassist?</h2>
             <p className="text-xl text-gray-600">Hayatının büyük kararlarını veriye dayalı al, pişman olma riskini azalt</p>
           </div>
           
@@ -269,10 +269,10 @@ const LandingPage = () => {
               <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                 <BarChart3 className="w-5 h-5 text-white" />
               </div>
-              <span className="font-bold text-lg">Gelecek Planlayıcım</span>
+              <span className="font-bold text-lg">cepassist</span>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 Gelecek Planlayıcım. TÜİK MCP Server ile güçlendirilmiştir.
+              © 2025 cepassist. TÜİK MCP Server ile güçlendirilmiştir.
             </p>
           </div>
         </div>
