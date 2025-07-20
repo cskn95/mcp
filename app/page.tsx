@@ -8,9 +8,10 @@ const LandingPage = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeDemo, setActiveDemo] = useState(0);
 
-  const smoothScroll = (e) => {
+  const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
+    if (!href) return;
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({
