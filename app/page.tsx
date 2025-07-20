@@ -31,10 +31,10 @@ const LandingPage = () => {
   }, []);
 
   const demoMessages = [
-    { type: 'user', text: 'Merhaba, Türkiye\'nin son 5 yıllık enflasyon verilerini görebilir miyim?' },
-    { type: 'bot', text: 'Tabii! TÜİK verilerine göre son 5 yıllık TÜFE oranları:\n\n📊 2020: %14.60\n📊 2021: %36.08\n📊 2022: %64.27\n📊 2023: %64.77\n📊 2024: %44.38' },
-    //{ type: 'user', text: 'İstanbul\'da konut fiyatları nasıl değişmiş?' },
-    //{ type: 'bot', text: 'İstanbul konut fiyat endeksi (2017=100):\n\n🏠 2022: 528.7\n🏠 2023: 892.4\n🏠 2024: 1156.3\n\n📈 Yıllık artış: %29.6\nDetaylı rapor ister misiniz?' }
+    { type: 'user', text: 'İyi para kazanan ama işsiz kalma riskim düşük olan bir meslek seçmek istiyorum. Önerebilir misin?' },
+    { type: 'bot', text: 'Son 5 yılda hem maaşı en çok artan hem de işsizlik oranı en düşük sektörler:\n\n💻 Bilgi ve İletişim: Ort. maaş ₺18.500, İşsizlik %3.2\n💼 Finans-Sigorta: Ort. maaş ₺16.800, İşsizlik %4.1\n🏥 Sağlık: Ort. maaş ₺14.200, İşsizlik %2.8\n\nHangi alan ilgini çekiyor?' },
+    { type: 'user', text: 'Bilgi ve İletişim ilgimi çekiyor. Bu alanda İstanbul\'da ne kadar sürede ev sahibi olabilirim?' },
+    { type: 'bot', text: 'Yazılım geliştirici olarak başlarsan:\n\n📊 Başlangıç maaşı: ₺12.000-15.000\n🏠 İstanbul ort. ev fiyatı: ₺1.2M\n💰 Gerekli peşinat (%30): ₺360.000\n\n⏰ Mevcut enflasyon ve fiyat artışlarını hesaba katarak, aylık ₺3.000 birikim yapsan yaklaşık 12-15 yıl sürer.\n\nBaşka senaryo deneyelim mi?' }
   ];
 
   useEffect(() => {
@@ -69,14 +69,14 @@ const LandingPage = () => {
               <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                 <BarChart3 className="w-6 h-6 text-white" />
               </div>
-              <span className="font-bold text-xl text-gray-800">TÜİK Veri Asistanı</span>
+              <span className="font-bold text-xl text-gray-800">Gelecek Planlayıcım</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" onClick={smoothScroll} className="text-gray-700 hover:text-green-600 transition-colors">Özellikler</a>
               <a href="#how-it-works" onClick={smoothScroll} className="text-gray-700 hover:text-green-600 transition-colors">Nasıl Çalışır?</a>
               <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg">
-                Hemen Başla
+                Hemen Planla
               </button>
             </div>
 
@@ -93,7 +93,7 @@ const LandingPage = () => {
               <a href="#features" onClick={smoothScroll} className="block px-3 py-2 text-gray-700 hover:text-green-600">Özellikler</a>
               <a href="#how-it-works" onClick={smoothScroll} className="block px-3 py-2 text-gray-700 hover:text-green-600">Nasıl Çalışır?</a>
               <button className="w-full bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors">
-                Hemen Başla
+                Hemen Planla
               </button>
             </div>
           </div>
@@ -109,15 +109,15 @@ const LandingPage = () => {
                 <span className="text-green-700 text-sm font-semibold">ChatGPT Powered</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                <span className="text-green-500">TÜİK Verilerine</span> WhatsApp'tan Anında Erişin
+                <span className="text-green-500">Hayatındaki Büyük Kararları</span> Veriye Dayalı Al
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Enflasyon, işsizlik, konut fiyatları ve daha fazlası... Tüm TÜİK istatistiklerini WhatsApp üzerinden sorgulayın, yapay zeka ile yorumlayın.
+                Hangi mesleği seçmeli, nerede yaşamalı, ne zaman ev almalı? TÜİK verileriyle hayatının önemli kararlarını simüle et, geleceğini planla.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-green-500 text-white px-8 py-4 rounded-full hover:bg-green-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center space-x-2">
                   <MessageCircle className="w-5 h-5" />
-                  <span className="font-semibold">WhatsApp'ta Başla</span>
+                  <span className="font-semibold">Planlamaya Başla</span>
                 </button>
                 <button className="bg-white text-green-600 px-8 py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-green-500 flex items-center justify-center space-x-2">
                   <span className="font-semibold">Demo İzle</span>
@@ -135,7 +135,7 @@ const LandingPage = () => {
                       <BarChart3 className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">TÜİK Veri Asistanı</h3>
+                      <h3 className="text-white font-semibold">Gelecek Planlayıcım</h3>
                       <p className="text-green-400 text-sm">Çevrimiçi</p>
                     </div>
                   </div>
@@ -169,8 +169,8 @@ const LandingPage = () => {
       <section id="features" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Neden TÜİK Veri Asistanı?</h2>
-            <p className="text-xl text-gray-600">TÜİK verilerine erişimin en kolay ve hızlı yolu</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Neden Gelecek Planlayıcım?</h2>
+            <p className="text-xl text-gray-600">Hayatının büyük kararlarını veriye dayalı al, pişman olma riskini azalt</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -178,24 +178,24 @@ const LandingPage = () => {
               <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-6">
                 <Calculator className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Kapsamlı Veri Erişimi</h3>
-              <p className="text-gray-600">Enflasyon, işsizlik, üretim, dış ticaret ve daha fazla TÜİK verisine anında ulaşın</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Kariyer Simülatörü</h3>
+              <p className="text-gray-600">Hangi mesleği seçersen hangi yaşam standardına ulaşabileceğini hesapla, gerçekçi beklentiler kur</p>
             </div>
             
             <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Resmi ve Güvenilir</h3>
-              <p className="text-gray-600">Doğrudan TÜİK veri tabanından güvenilir ve güncel istatistikler</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Yatırım Planlayıcı</h3>
+              <p className="text-gray-600">Ev almak, araba değiştirmek, emeklilik... Büyük harcamalar için ne kadar biriktirmen gerektiğini öğren</p>
             </div>
             
             <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-6">
                 <Smartphone className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Destekli Yorumlama</h3>
-              <p className="text-gray-600">Karmaşık verileri anlaşılır özetler ve görselleştirmelerle sunar</p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Şehir Karşılaştırıcı</h3>
+              <p className="text-gray-600">İstanbul'dan Ankara'ya mı taşınsan? Hangi şehirde yaşam maliyeti düşük ama fırsatlar çok?</p>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Nasıl Çalışır?</h2>
-            <p className="text-xl text-gray-600">3 basit adımda TÜİK verilerine erişin</p>
+            <p className="text-xl text-gray-600">3 basit adımda hayatının yol haritasını çiz</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -216,8 +216,8 @@ const LandingPage = () => {
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
                   1
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">WhatsApp'a Mesaj Atın</h3>
-                <p className="text-gray-600">Botumuzla WhatsApp üzerinden iletişime geçin</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Hedefini Belirle</h3>
+                <p className="text-gray-600">Ne yapmak istiyorsun? Kariyer değişikliği, ev alma, şehir değiştirme...</p>
               </div>
             </div>
             
@@ -227,8 +227,8 @@ const LandingPage = () => {
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
                   2
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Veri Talebinizi İletin</h3>
-                <p className="text-gray-600">İstediğiniz TÜİK verilerini sorun: enflasyon, işsizlik, üretim verileri vb.</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Durumunu Anlat</h3>
+                <p className="text-gray-600">Mevcut durumun, gelirin, yaşadığın şehir gibi temel bilgileri paylaş</p>
               </div>
             </div>
             
@@ -237,8 +237,8 @@ const LandingPage = () => {
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
                   3
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Sonuç ve Analiz Alın</h3>
-                <p className="text-gray-600">Veriler, grafikler ve AI destekli yorumlar ile detaylı analiz</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Simülasyon ve Plan Al</h3>
+                <p className="text-gray-600">Veriye dayalı senaryo analizleri, zaman çizelgeleri ve eylem planları</p>
               </div>
             </div>
           </div>
@@ -249,14 +249,14 @@ const LandingPage = () => {
       <section className="py-20 bg-gradient-to-r from-green-500 to-green-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
-            TÜİK Verilerine Hemen Erişmeye Başlayın
+            Hayatının Büyük Kararlarını Şansa Bırakma
           </h2>
           <p className="text-xl text-green-100 mb-8">
-            WhatsApp üzerinden tüm TÜİK istatistiklerine anında ulaşın, AI destekli analizler alın
+            TÜİK verileriyle kararlarını simüle et, hangi yolun seni nereye götüreceğini gör
           </p>
           <button className="bg-white text-green-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl font-semibold text-lg flex items-center justify-center space-x-2 mx-auto">
             <MessageCircle className="w-6 h-6" />
-            <span>WhatsApp'ta Başla</span>
+            <span>Planlamaya Başla</span>
           </button>
         </div>
       </section>
@@ -269,10 +269,10 @@ const LandingPage = () => {
               <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                 <BarChart3 className="w-5 h-5 text-white" />
               </div>
-              <span className="font-bold text-lg">TÜİK Veri Asistanı</span>
+              <span className="font-bold text-lg">Gelecek Planlayıcım</span>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 TÜİK Veri Asistanı. TÜİK MCP Server ile güçlendirilmiştir.
+              © 2025 Gelecek Planlayıcım. TÜİK MCP Server ile güçlendirilmiştir.
             </p>
           </div>
         </div>
