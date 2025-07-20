@@ -33,8 +33,8 @@ const LandingPage = () => {
   const demoMessages = [
     { type: 'user', text: 'İyi para kazanan ama işsiz kalma riskim düşük olan bir meslek seçmek istiyorum. Önerebilir misin?' },
     { type: 'bot', text: 'Son 5 yılda hem maaşı en çok artan hem de işsizlik oranı en düşük sektörler:\n\n💻 Bilgi ve İletişim: Ort. maaş ₺18.500, İşsizlik %3.2\n💼 Finans-Sigorta: Ort. maaş ₺16.800, İşsizlik %4.1\n🏥 Sağlık: Ort. maaş ₺14.200, İşsizlik %2.8\n\nHangi alan ilgini çekiyor?' },
-    { type: 'user', text: 'Bilgi ve İletişim ilgimi çekiyor. Bu alanda İstanbul\'da ne kadar sürede ev sahibi olabilirim?' },
-    { type: 'bot', text: 'Yazılım geliştirici olarak başlarsan:\n\n📊 Başlangıç maaşı: ₺12.000-15.000\n🏠 İstanbul ort. ev fiyatı: ₺1.2M\n💰 Gerekli peşinat (%30): ₺360.000\n\n⏰ Mevcut enflasyon ve fiyat artışlarını hesaba katarak, aylık ₺3.000 birikim yapsan yaklaşık 12-15 yıl sürer.\n\nBaşka senaryo deneyelim mi?' }
+    //{ type: 'user', text: 'Bilgi ve İletişim ilgimi çekiyor. Bu alanda İstanbul\'da ne kadar sürede ev sahibi olabilirim?' },
+    //{ type: 'bot', text: 'Yazılım geliştirici olarak başlarsan:\n\n📊 Başlangıç maaşı: ₺12.000-15.000\n🏠 İstanbul ort. ev fiyatı: ₺1.2M\n💰 Gerekli peşinat (%30): ₺360.000\n\n⏰ Mevcut enflasyon ve fiyat artışlarını hesaba katarak, aylık ₺3.000 birikim yapsan yaklaşık 12-15 yıl sürer.\n\nBaşka senaryo deneyelim mi?' }
   ];
 
   useEffect(() => {
